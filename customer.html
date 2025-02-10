@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <title>Selvi Electricals & Hardware Store</title>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="RES/Icons/icons8-warehouse-100.png" type="image/x-icon" />
+    <link rel="stylesheet" href="customer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="sk.js"></script>
+  </head>
+  <body style="background-color: #B4B4B8" onload="startTime(),liveDate()">
+    <h2 id="head">Selvi Electricals & Hardware Store</h2>
+    <div>
+      <header>
+        <ul style="background-color: #607274" id="navbar">
+          <li>
+            <a href="sk.html" style="text-decoration: none">HOME</a>
+          </li>
+          <!-- <li>
+            <a href="product.php" style="text-decoration: none" target="_self"
+              >Products</a
+            >
+          </li> -->
+          <li>
+            <a href="customer.html" style="text-decoration: none"
+              >Customer Service</a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
+    <div class="font">
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i><img src="RES/Icons/location.png" alt=""></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Opposite to Parktown Bustand</div>
+              <div class="text-two">Madurai, Tamilnadu</div>
+            </div>
+            <div class="phone details">
+              <i><img src="RES/Icons/smartphone.png" alt=""></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+91 7867993503</div>
+              <div class="text-two">0452 938567</div>
+            </div>
+            <div class="email details">
+              <i><img src="RES/Icons/email.png" alt=""></i>
+              <div class="topic">Email</div>
+              <div class="text-one">SelviElectricals@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>
+              Leave your Feedback of Our work and Products On here..!
+            </p>
+            <form action="CustomerBackend.php" method="post">
+              <div class="input-box">
+                <input type="text" name="uname" placeholder="Enter your name" style="font-family: Microsoft JhengHei;"/>
+              </div>
+              <div class="input-box">
+                <input type="text" name="email" placeholder="Enter your email" style="font-family: Microsoft JhengHei;"/>
+              </div>
+              <div class="input-box message-box">
+                <textarea name="msg" placeholder="Enter your message" style="font-family: Microsoft JhengHei;font-size: 15px;"></textarea>
+              </div>
+              <button id="button">Send Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="para">Our Internet community As follows</p>
+    <!-- <div style="margin-left: 30px;">
+      <img src="RES/Icons/Whatsapp Sh.png" alt="" style="height: 70px;width: 250px;" id="share">
+      <img src="RES/Icons/Insta Sh.png" alt="" style="height: 70px;width: 250px;" id="share">
+      <img src="RES/Icons/FaceBook Sh.png" alt="" style="height: 70px;width: 250px;" id="share">
+      <img src="RES/Icons/YouTube Sh.png" alt="" style="height: 70px;width: 250px;" id="share">
+      <img src="RES/Icons/Twitter Sh.png" alt="" style="height: 70px;width: 250px;" id="share">
+    </div>
+    <br><br> -->
+    <div style="display: flex;justify-content: space-between;align-items: end;margin: 10px;">
+    <container id="sh" style="display: block;background-image: url(RES/Icons/Whatsapp\ Sh.png);">
+      <a href="https://api.whatsapp.com/send/?phone=%2B917867993503&text&type=phone_number&app_absent=0" target="_blank" style="color: black;text-decoration: none;"><p style="margin-top: 4px; margin-left: 115px;margin-bottom: -10px;">Contact On</p>
+      <p style="margin-left: 80px;">+91 786799350</p>
+    </a>
+    </container>
+    <container id="sh" style="display: block;background-image: url(RES/Icons/Insta\ Sh.png);">
+      <a href="https://www.instagram.com/marshaal_the_mr/?hl=en"></a>
+      <p style="margin-top: 4px;margin-left: 115px;margin-bottom: -10px;">Follow Us</p>
+      <p style="margin-left: 80px;">@selvi_electricals</p>
+    </container>
+    <container id="sh" style="display: block;background-image: url(RES/Icons/FaceBook\ Sh.png);">
+      <p style="margin-top: 4px;margin-left: 115px;margin-bottom: -10px;">Comment On</p>
+      <p style="margin-left: 85px;">SelviElectricals_</p>
+    </container>
+    <container id="sh" style="display: block;background-image: url(RES/Icons/YouTube\ Sh.png);">
+      <p style="margin-top: 4px;margin-left: 115px;margin-bottom: -10px;">Subscribe Us</p>
+      <p style="margin-left: 85px;">SelviElectricals</p>
+    </container>
+    <container id="sh" style="display: block;background-image: url(RES/Icons/Twitter\ Sh.png);">
+      <p style="margin-top: 4px;margin-left: 115px;margin-bottom: -10px;">Tag Us</p>
+      <p style="margin-left: 85px;">SelviElectricals_</p>
+    </container>
+  </div>
+  <table id="faq" ><tr>
+    <td style="width:47%;"><hr style="border: 0.5px solid black;"/></td>
+    <td style="vertical-align:middle; text-align: center;color: black;font-size: 30px; ">FAQ's</td>
+    <td style="width:48%;color: black;"><hr style="border: 0.5px solid black;"/></td>
+    </tr></table>
+    <div style="display: flex;justify-content: space-between;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 10px;">
+      <div>
+        <p style="font-size: 16px;"><strong>Can I change or modify orders that are already placed?</strong></p>
+        <p style="font-size: 14px;text-align: center;">No, once an order is placed it cannot be changed or modified.</p>
+      </div>
+      <div>
+        <p style="font-size: 16px;"><strong>How long will my order take to reach me?</strong></p>
+        <p style="font-size: 14px;text-align: center;">Orders generally take around 2-3 business days</p>
+      </div>
+      <div>
+        <p style="font-size: 16px;text-align: center;"><strong>I ordered a wrong item. How can I stop the order?</strong></p>
+        <p style="font-size: 14px;text-align: center;">If you have made a mistake in ordering, please contact us immediately. 
+        <p style="font-size: 14px;text-align: center;">So, we can assist you with stopping the order.</p>
+      </div>
+    </div>
+    <footer>
+      <div style="margin-top: 2%; margin-left: 2%">
+        &copy; 2020 All rights reserved. <br />
+        Terms And Conditions.&reg;
+      </div>
+      <div class="center" >
+        <p style="font-size: 20px">
+          Follow Us <br />
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B917867993503&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <img
+              src="RES/Icons/whatsapp-logo.png"
+              alt="whatsapp Icon"
+              width="30"
+              height="30"
+          /></a>
+          <a
+            href="https://www.instagram.com/marshaal_the_mr/?hl=en"
+            target="_blank"
+            ><img
+              src="RES/Icons/instagram.ico"
+              alt="instagram Icon"
+              width="30"
+              height="30"
+          /></a>
+          <a href="https://t.me/+91-7867993503" target="_blank"><img src="RES/Icons/telegram.png" alt="youtube icon" width="30" height="30" /></a>
+        </p>
+      </div>
+    </footer>
+    <hr style="background-color: #1c1d22" />
+    <div id="time1">
+      <p id="time"></p>
+      <p id="date"></p>
+    </div>
+  </body>
+</html>

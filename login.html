@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hardware Sales | Login</title>
+    <link rel="icon" href="icons8-warehouse-100.png" type="image/x-icon" />
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <a href="sk.html" id="back"><img src="back (2).png" alt="" style="margin: 10px;margin-left: 15px;"></a>
+    <div class="container">
+      <input type="checkbox" id="check" />
+      <div class="login form">
+        <header>Customer Login</header>
+        <form action="logincheck.php" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Enter your password"
+            required
+          />
+          <button id="login">Login</button>
+          <!-- <input type="button" class="button" value="Login" /> -->
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Don't have an account?
+            <label for="check">Signup</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Customer Signup</header>
+        <form action="register.php" method="post">
+          <input
+            type="text"
+            name="uname"
+            placeholder="Enter your Username"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Create a password"
+            id="password"
+            required
+          />
+          <input
+            type="password"
+            name="pswd1"
+            placeholder="Confirm your password"
+            id="confirm_password"
+            required
+          />
+          <button id="login">Signup</button>
+          <!-- <input type="button" class="button" value="Signup" /> -->
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Already have an account?
+            <label for="check">Login</label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script>
+      var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+    </script>
+  </body>
+</html>
